@@ -12,7 +12,7 @@ string removeLeadingSpaces(string line){
 )
     for(int i = 0; i < line.length();i++){
         if(isspace(line[i])){
-            line.erase(line.begin()+i);
+	  line.erase(line.begin()+i); //removes white space/tab in front of line
             }else{
                 return line;
             }
